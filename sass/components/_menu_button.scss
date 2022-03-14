@@ -1,0 +1,24 @@
+.menuButton {
+    @extend %flex-center;
+    background-color: transparent;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    z-index: 3;
+}
+
+.menuIcon:hover {
+    fill: $activIconFillColour;
+}
+
+.menuIcon__cross {
+    display: none;
+
+    .menuButton.is-open & {
+        display: block;
+    }
+}
+
+.menuButton.is-open .menuIcon__burger {
+    display: none;
+}

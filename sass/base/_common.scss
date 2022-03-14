@@ -1,7 +1,36 @@
 body {
+    display: flex;
+    flex-direction: column;
     font-family: $pramaryFontFamaly;
     font-size: 14px;
     font-weight: 400;
-    line-height: 1.71;
-    letter-spacing: 0.03em
+    letter-spacing: 0.03em;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1 1 auto;
+}
+
+.container {
+    max-width: 480px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.pageSection {
+    padding: 60px 0;
+    background-color: $primaryBackgroundColour;
+    &--grayBG {
+        background-color: $secondaryBackgroundColour;
+    }
+}
+
+.pageSection__title {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 28px;
+    line-height: 1.17;
+    font-weight: 700;
+    color: $primaryTitleTextColour;
 }

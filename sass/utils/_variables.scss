@@ -1,3 +1,4 @@
+$transitionSetting: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 $pramaryFontFamaly: 'Roboto', sans-serif;
 $secondaryFontFamily: 'Raleway', sans-serif;
 
@@ -18,4 +19,13 @@ $primaryBackgroundColour: #FFFFFF;
 $secondaryBackgroundColour: #F5F4FA;
 $footerBackgroundColour: #2F303A;
 $primaryLabelBackgroundColour: rgba(47, 48, 58, 0.8);
-$secondaryLabelBackgroundColour: rgba(33, 150, 243, 0.9);;
+$secondaryLabelBackgroundColour: rgba(33, 150, 243, 0.9);
+$primaryButtonBackgroundColour:#2196F3;
+$hoverButtonBackgroundColour: #188CE8;
+
+%flex-center {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+

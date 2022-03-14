@@ -1,0 +1,84 @@
+.footer {
+    padding: 60px 0;
+    background-color: $footerBackgroundColour;
+}
+
+.footer__contactsWrapper {
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.71;
+    color: $secondaryTextColour;
+}
+
+.footer__logo {
+    color: $secondaryTitleTextColour;
+    margin-bottom: 20px;
+}
+
+.footer__contactsList {
+    margin-bottom: 60px;
+}
+
+.footer__contactItem {
+    margin-bottom: 8px;
+}
+
+.footer__contactLink {
+    color: rgba(255, 255, 255, 0.6);
+    &:hover,
+    &:focus {
+        color: $accentTextColour;
+    }
+}
+
+.footer__socialsWrapper {
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.14;
+    margin-bottom: 60px;
+}
+
+.footer__subTitle {
+    color: $secondaryTitleTextColour;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.footer__socialsList {
+    display: flex;
+    justify-content: center;
+}
+
+.footer__socialItem:not(:last-child) {
+    margin-right: 10px;
+}
+.footer__socialLink {
+    @extend %flex-center;
+    border-radius: 50%;
+    background-color: $secondaryIconBackgroundColour;
+
+    &:hover {
+        background-color: $activIconFillColour;
+    }
+}
+
+.footer__socialIcon {
+    fill: $secondaryIconFillColour;
+}
+
+.footer__subscribeWrapper {
+    text-align: center;
+}
+
+.footer__subscribeInput {
+    width: 100%;
+    padding: 15px 16px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    color: $secondaryTextColour;
+    font-size: 16px;
+    line-height: 1.25;
+    margin-bottom: 20px;
+}

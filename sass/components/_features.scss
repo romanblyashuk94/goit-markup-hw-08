@@ -1,0 +1,43 @@
+.featureItem {
+    margin-bottom: 30px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+    
+    &::before {
+        content: '';
+        display: block;
+        margin-bottom: 30px;
+        min-height: 120px;
+        background-color: $secondaryBackgroundColour;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    &--antenna::before {
+        background-image: url(../images/featuresIcons/antenna.svg);
+    }
+    &--clock::before {
+        background-image: url(../images/featuresIcons/clock.svg);
+    }
+    &--diagram::before {
+        background-image: url(../images/featuresIcons/diagram.svg);
+    }
+    &--astronaut::before {
+        background-image: url(../images/featuresIcons/astronaut.svg);
+    }
+}
+
+.featureItem_title {
+    margin-bottom: 10px;
+    text-align: center;
+    color: $primaryTitleTextColour;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1.14;
+}
+
+.featureItem_description {
+    line-height: 1.71;
+    color: $primaryTextColour;
+}

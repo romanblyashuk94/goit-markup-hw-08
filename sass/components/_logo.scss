@@ -1,0 +1,12 @@
+.logo {
+    display: inline-block;
+    font-family: $secondaryFontFamily;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    color: $primaryTitleTextColour;
+}
+
+.logo__accent {
+    color: $accentTextColour;
+}

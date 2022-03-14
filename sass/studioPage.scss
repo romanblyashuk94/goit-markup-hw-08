@@ -1,4 +1,18 @@
-@import './utils/variables.scss';
+@import './utils/variables';
 @import './base/modernNormalize';
 @import './base/resetDefaultStyles';
 @import './base/common';
+
+
+@import './components/header';
+@import './components/footer';
+@import './components/logo';
+@import './components/button';
+@import './components/mobileNav';
+@import './components/menu_button';
+@import './components/hero';
+@import './components/features';
+@import './components/teamList';
+@import './components/clientsList';
+@import './components/feedbackModal';
+@import './components/closeButton';
