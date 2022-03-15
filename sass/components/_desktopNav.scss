@@ -1,0 +1,89 @@
+.desktopNav {
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 767px) {
+        display: none;        
+    }
+}
+
+.desktopNav__navMenu {
+    display: flex;
+    align-items: center;
+    margin-right: 84px;
+
+    
+}
+
+.desktopNav__navItem {
+    margin-right: 50px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+}
+
+.desktopNav__navLink {
+    
+    display: inline-block;
+    padding: 32px 0;
+
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $primaryTitleTextColour;
+
+    &--active {
+        position: relative;
+        color: $accentTextColour;
+        
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            border-radius: 2px;
+            background-color: $accentTextColour;
+    
+        }
+
+    }
+
+    &:hover {
+        color: $accentTextColour;
+    }
+}
+
+.desktopNav__contactItem {
+    margin-bottom: 10px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.desktopNav__contactLink {
+    @extend %flex-center;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+    color: $primaryTextColour;
+
+    &:hover {
+        color: $accentTextColour;
+    }
+}
+
+.desktopNav__contactIcon {
+    margin-right: 8px;
+    fill: $primaryTextColour;
+
+    .desktopNav__contactLink:hover & {
+        fill: $accentTextColour;
+    }
+}

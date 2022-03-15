@@ -3,12 +3,12 @@
 @import './base/resetDefaultStyles';
 @import './base/common';
 
-
+@import './components/logo';
 @import './components/header';
 @import './components/footer';
-@import './components/logo';
 @import './components/button';
 @import './components/mobileNav';
+@import './components/desktopNav';
 @import './components/menu_button';
 @import './components/hero';
 @import './components/features';

@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.footer__socialLink, .button, .menuButton, .projectsFilterForm__button {
+.footer__socialLink, .button, .desktopNav__contactLink, .menuButton, .projectsFilterForm__button {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -368,6 +368,10 @@ body {
   min-height: 100vh;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 main {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
@@ -378,6 +382,12 @@ main {
   max-width: 480px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
 }
 
 .pageSection {
@@ -398,8 +408,35 @@ main {
   color: #212121;
 }
 
+.logo {
+  display: inline-block;
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #212121;
+}
+
+.logo__accent {
+  color: #2196F3;
+}
+
 .header__content {
   position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .header__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .header__logo {
@@ -411,20 +448,37 @@ main {
   background-color: #2F303A;
 }
 
+@media screen and (min-width: 768px) {
+  .footer__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .footer__contactsWrapper {
   text-align: center;
   font-size: 14px;
   line-height: 1.71;
   color: #FFFFFF;
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__contactsWrapper {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
 }
 
 .footer__logo {
   color: #FFFFFF;
   margin-bottom: 20px;
-}
-
-.footer__contactsList {
-  margin-bottom: 60px;
 }
 
 .footer__contactItem {
@@ -444,6 +498,13 @@ main {
   font-size: 14px;
   line-height: 1.14;
   margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__socialsWrapper {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
 }
 
 .footer__subTitle {
@@ -481,6 +542,9 @@ main {
 
 .footer__subscribeWrapper {
   text-align: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 450px;
+          flex: 0 1 450px;
 }
 
 .footer__subscribeInput {
@@ -493,19 +557,6 @@ main {
   font-size: 16px;
   line-height: 1.25;
   margin-bottom: 20px;
-}
-
-.logo {
-  display: inline-block;
-  font-family: "Raleway", sans-serif;
-  font-size: 24px;
-  line-height: 28px;
-  font-weight: 700;
-  color: #212121;
-}
-
-.logo__accent {
-  color: #2196F3;
 }
 
 .button {
@@ -558,6 +609,12 @@ main {
 .mobileNav.is-open {
   -webkit-transform: translateY(0);
           transform: translateY(0);
+}
+
+@media screen and (min-width: 768px) {
+  .mobileNav {
+    display: none;
+  }
 }
 
 .mobileNav__navMenu {
@@ -644,12 +701,110 @@ main {
   color: #2196F3;
 }
 
+.desktopNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .desktopNav {
+    display: none;
+  }
+}
+
+.desktopNav__navMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 84px;
+}
+
+.desktopNav__navItem {
+  margin-right: 50px;
+}
+
+.desktopNav__navItem:last-child {
+  margin-right: 0;
+}
+
+.desktopNav__navLink {
+  display: inline-block;
+  padding: 32px 0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.desktopNav__navLink--active {
+  position: relative;
+  color: #2196F3;
+}
+
+.desktopNav__navLink--active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #2196F3;
+}
+
+.desktopNav__navLink:hover {
+  color: #2196F3;
+}
+
+.desktopNav__contactItem {
+  margin-bottom: 10px;
+}
+
+.desktopNav__contactItem:last-child {
+  margin-bottom: 0;
+}
+
+.desktopNav__contactLink {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.desktopNav__contactLink:hover {
+  color: #2196F3;
+}
+
+.desktopNav__contactIcon {
+  margin-right: 8px;
+  fill: #757575;
+}
+
+.desktopNav__contactLink:hover .desktopNav__contactIcon {
+  fill: #2196F3;
+}
+
 .menuButton {
   background-color: transparent;
   position: absolute;
   top: 10px;
   right: 15px;
   z-index: 3;
+}
+
+@media screen and (min-width: 768px) {
+  .menuButton {
+    display: none;
+  }
 }
 
 .menuIcon:hover {
@@ -676,6 +831,15 @@ main {
       flex-wrap: wrap;
   margin-top: -15px;
   margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .projectsFilterForm {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 30px;
+  }
 }
 
 .projectsFilterForm__field {
@@ -715,6 +879,17 @@ main {
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+@media screen and (min-width: 768px) {
+  .projectsList {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
 .projectItem {
   background: #FFFFFF;
   border: 1px solid #EEEEEE;
@@ -724,6 +899,14 @@ main {
 .projectItem:hover {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+@media screen and (min-width: 768px) {
+  .projectItem {
+    -ms-flex-preferred-size: calc((100% - 60px)/2);
+        flex-basis: calc((100% - 60px)/2);
+    margin: 15px;
+  }
 }
 
 .projectItem__imageThumb {

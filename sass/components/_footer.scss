@@ -3,20 +3,29 @@
     background-color: $footerBackgroundColour;
 }
 
+.footer__content {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;        
+    }
+}
+
 .footer__contactsWrapper {
     text-align: center;
     font-size: 14px;
     line-height: 1.71;
     color: $secondaryTextColour;
+    margin-bottom: 60px;
+
+    @media screen and (min-width: 768px) {
+        flex-basis: 50%;      
+    }
 }
 
 .footer__logo {
     color: $secondaryTitleTextColour;
     margin-bottom: 20px;
-}
-
-.footer__contactsList {
-    margin-bottom: 60px;
 }
 
 .footer__contactItem {
@@ -36,6 +45,10 @@
     font-size: 14px;
     line-height: 1.14;
     margin-bottom: 60px;
+
+    @media screen and (min-width: 768px) {
+        flex-basis: 50%;      
+    }
 }
 
 .footer__subTitle {
@@ -69,10 +82,11 @@
 
 .footer__subscribeWrapper {
     text-align: center;
+    flex: 0 1 450px;
 }
 
 .footer__subscribeInput {
-    width: 100%;
+    width: 100%;   
     padding: 15px 16px;
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);

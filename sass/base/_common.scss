@@ -6,6 +6,10 @@ body {
     font-weight: 400;
     letter-spacing: 0.03em;
     min-height: 100vh;
+
+    &.modal-open {
+        overflow: hidden;
+    }
 }
 
 main {
@@ -16,6 +20,11 @@ main {
     max-width: 480px;
     padding: 0 15px;
     margin: 0 auto;
+
+    @media screen and (min-width: 768px) {
+        max-width: 768px;
+        
+    }
 }
 
 .pageSection {
