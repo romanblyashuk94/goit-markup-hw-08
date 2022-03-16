@@ -461,9 +461,6 @@ main {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
   }
 }
 
@@ -777,6 +774,7 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-left: 88px;
 }
 
 @media screen and (max-width: 767px) {
