@@ -24,6 +24,10 @@
 .projectItem__imageThumb {
     position: relative;
     overflow: hidden;
+
+    @media screen and (min-width: 768px) {
+        
+    }
 }
 
 .projectItem__image {
@@ -37,6 +41,7 @@
     width: 100%;
     height: 100%;
 
+    @extend %flex-center;
     background-color: rgba(33, 150, 243, 0.9);
     padding: 77px 24px;
     font-size: 18px;
@@ -47,7 +52,11 @@
 
     .projectItem:hover & {
         transform: translateY(0);
-    }    
+    }
+    
+    @media screen and (min-width: 768px) {
+        padding: 49px 24px;
+    }
 }
 
 .projectItem__label {

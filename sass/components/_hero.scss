@@ -6,6 +6,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
+
+    @media screen and (min-width: 1200px) {
+        padding: 200px 0;
+    }
 }
 
 
@@ -21,4 +25,9 @@
     color: $secondaryTextColour;
     margin-bottom: 30px;
 
+    @media screen and (min-width: 1200px) {
+        font-size: 44px;
+        line-height: 1.36;
+        max-width: 696px;
+    }
 }

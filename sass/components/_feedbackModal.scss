@@ -26,15 +26,21 @@
     transform: translate(-50%, -50%);
 
     padding: 40px;
-    width: calc(100% - 30px);
-    max-height: 609px;
+    min-width: calc(100% - 30px);
+    
 
     background-color: $primaryBackgroundColour;
 
     transition: transform $transitionSetting;
 
     @media screen and (min-width: 480px) {
-        width: 450px;        
+        min-width: 450px;
+        max-width: 450px;        
+    }
+
+    @media screen and (min-width: 1200px) {
+        min-width: 528px;
+        min-height: 581px;        
     }
 }
 
@@ -102,6 +108,7 @@
 
 .feedbackModal__agreementFieldCheckbox {
     appearance: none;
+    display: inline
 }
 
 .feedbackModal__agreementLabel {

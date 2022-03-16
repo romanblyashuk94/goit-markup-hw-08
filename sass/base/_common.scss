@@ -22,17 +22,31 @@ main {
     margin: 0 auto;
 
     @media screen and (min-width: 768px) {
-        max-width: 768px;
-        
+        max-width: 768px;   
+    }
+
+    @media screen and (min-width: 1200px) {
+        max-width: 1200px;   
     }
 }
 
 .pageSection {
     padding: 60px 0;
     background-color: $primaryBackgroundColour;
+
     &--grayBG {
         background-color: $secondaryBackgroundColour;
     }
+
+    @media screen and (min-width: 1200px) {
+        padding: 94px 0;
+        
+        &--withoutTopPadding {
+            padding-top: 0;
+        }  
+    }
+
+    
 }
 
 .pageSection__title {
@@ -42,4 +56,8 @@ main {
     line-height: 1.17;
     font-weight: 700;
     color: $primaryTitleTextColour;
+
+    @media screen and (min-width: 1200px){
+        margin-bottom: 50px;
+    }
 }

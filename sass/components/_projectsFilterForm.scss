@@ -32,6 +32,7 @@
     font-weight: 500;
     line-height: 1.62;
     color: $primaryTitleTextColour;
+    cursor: pointer;
 
     &:hover {
         background-color: $secondaryLabelBackgroundColour;

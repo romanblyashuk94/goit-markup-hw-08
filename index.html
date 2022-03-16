@@ -17,7 +17,7 @@
     <!-- header -->
     <header class="header">
         <div class="header__content container">
-            <a href="" class="logo header__logo"><span class="logo__accent">Web</span>Studio</a>
+            <a href="./index.html" class="logo header__logo"><span class="logo__accent">Web</span>Studio</a>
             <button class="menuButton" aria-label="Переключатель мобильного меню" aria-expanded="false" aria-controls="mobileNavMenu" data-menu-button
                 aria-expanded="false">
                 <svg class="menuIcon" width="40" height="40">
@@ -54,7 +54,7 @@
                     <ul class="desktopNav__contactsList">
                         <li class="desktopNav__contactItem">
                             <a class="desktopNav__contactLink" href="mailto:info@devstudio.com">
-                                <svg class="desktopNav__contactIcon" width="14" height="10">
+                                <svg class="desktopNav__contactIcon desktopNav__contactIcon--email">
                                     <use href="./images/iconsSprite.svg#icon-emailContactIcon"></use>
                                 </svg>
                                 info@devstudio.com
@@ -62,7 +62,7 @@
                         </li>
                         <li class="desktopNav__contactItem">
                             <a class="desktopNav__contactLink" href="tel:+380961111111">
-                                <svg class="desktopNav__contactIcon" width="10" height="14">
+                                <svg class="desktopNav__contactIcon desktopNav__contactIcon--tel">
                                     <use href="./images/iconsSprite.svg#icon-telContactIcon"></use>
                                 </svg>
                                 +38 096 111 11 11
@@ -102,6 +102,26 @@
                         <h3 class="featureItem_title">Современные технологии</h3>
                         <p class="featureItem_description">Значимость этих проблем настолько очевидна, что реализация
                             плановых заданий.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- What we Doing -->
+        <section class="pageSection pageSection--withoutTopPadding whatWeDoingSection">
+            <div class="container">
+                <h2 class="pageSection__title">Чем мы занимаемся</h2>
+                <ul class="whatWeDoingList">
+                    <li class="whatWeDoingList__item">
+                        <img class="whatWeDoingList__image" src="./images/whatWeDoing/whatWeDoing1.jpg" alt="Пишем код" width="370">
+                        <h3 class="whatWeDoingList__description">Десктопные приложения</h3>
+                    </li>
+                    <li class="whatWeDoingList__item">
+                        <img class="whatWeDoingList__image" src="./images/whatWeDoing/whatWeDoing2.jpg" alt="Делаем адаптив" width="370">
+                        <h3 class="whatWeDoingList__description">Мобильные приложения</h3>
+                    </li>
+                    <li class="whatWeDoingList__item">
+                        <img class="whatWeDoingList__image" src="./images/whatWeDoing/whatWeDoing3.jpg" alt="Делаем дизайн" width="370">
+                        <h3 class="whatWeDoingList__description">Дизайнерские решения</h3>
                     </li>
                 </ul>
             </div>
@@ -377,7 +397,7 @@
             </button>
             <h2 class="feedbackModal__title">Оставьте свои данные, мы вам перезвоним</h2>
             <form class="feedbackModal__form">
-                <div class=".feedbackModal__textFieldsGroup" role="form-group">
+                <div class="feedbackModal__textFieldsGroup" role="form-group">
                     <div class="feedbackModal__formField">
                         <label class="feedbackModal__fieldLabel" for="name">Имя</label>
                         <input class="feedbackModal__textField" type="text" name="name" id="name" required>
