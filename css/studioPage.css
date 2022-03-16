@@ -344,7 +344,9 @@ address {
 }
 
 img {
-  vertical-align: top;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -700,6 +702,12 @@ main {
   letter-spacing: 0.02em;
 }
 
+@media screen and (max-width: 479px) {
+  .mobileNav__navMenu {
+    font-size: 36px;
+  }
+}
+
 .mobileNav__navItem {
   margin-bottom: 32px;
 }
@@ -745,6 +753,12 @@ main {
   color: #2196F3;
 }
 
+@media screen and (max-width: 479px) {
+  .mobileNav__contactItem:first-child {
+    font-size: 24px;
+  }
+}
+
 .mobileNav__contactLink {
   display: block;
 }
@@ -761,6 +775,12 @@ main {
   font-weight: 500;
   letter-spacing: 0.02em;
   color: #2196F3;
+}
+
+@media screen and (max-width: 479px) {
+  .mobileNav__socialsList {
+    font-size: 14px;
+  }
 }
 
 .mobileNav__socialItem:not(:last-child) {
@@ -1164,9 +1184,7 @@ main {
 }
 
 .teamMember__image {
-  display: block;
   margin-bottom: 30px;
-  width: 100%;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {

@@ -26,6 +26,10 @@
     font-weight: 500;
     line-height: 1.17;
     letter-spacing: 0.02em;
+
+    @media screen and (max-width: 479px) {
+        font-size: 36px; 
+    }
 }
 
 .mobileNav__navItem {
@@ -70,6 +74,10 @@
     & .mobileNav__contactLink {
         color: $accentTextColor;
     }
+
+    @media screen and (max-width: 479px) {
+        font-size: 24px; 
+    }
 }
 
 .mobileNav__contactLink {
@@ -84,6 +92,10 @@
     font-weight: 500;
     letter-spacing: 0.02em;
     color: $accentTextColor;
+
+    @media screen and (max-width: 479px) {
+        font-size: 14px; 
+    }
 }
 
 .mobileNav__socialItem:not(:last-child) {

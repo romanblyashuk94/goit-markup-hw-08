@@ -344,7 +344,9 @@ address {
 }
 
 img {
-  vertical-align: top;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -700,6 +702,12 @@ main {
   letter-spacing: 0.02em;
 }
 
+@media screen and (max-width: 479px) {
+  .mobileNav__navMenu {
+    font-size: 36px;
+  }
+}
+
 .mobileNav__navItem {
   margin-bottom: 32px;
 }
@@ -745,6 +753,12 @@ main {
   color: #2196F3;
 }
 
+@media screen and (max-width: 479px) {
+  .mobileNav__contactItem:first-child {
+    font-size: 24px;
+  }
+}
+
 .mobileNav__contactLink {
   display: block;
 }
@@ -761,6 +775,12 @@ main {
   font-weight: 500;
   letter-spacing: 0.02em;
   color: #2196F3;
+}
+
+@media screen and (max-width: 479px) {
+  .mobileNav__socialsList {
+    font-size: 14px;
+  }
 }
 
 .mobileNav__socialItem:not(:last-child) {
@@ -1065,6 +1085,7 @@ main {
 }
 
 .projectItem__imageThumb {
+  width: 100%;
   position: relative;
   overflow: hidden;
   -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1076,11 +1097,6 @@ main {
 .projectItem:hover .projectItem__imageThumb {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.projectItem__image {
-  display: block;
-  width: 100%;
 }
 
 .projectItem__description {
