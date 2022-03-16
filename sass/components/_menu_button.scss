@@ -11,8 +11,12 @@
     }
 }
 
+.menuIcon {
+    transition: fill $transitionSetting;
+}
+
 .menuIcon:hover {
-    fill: $activIconFillColour;
+    fill: $activIconFillColor;
 }
 
 .menuIcon__cross {

@@ -9,6 +9,10 @@
     border-radius: 50%;
 }
 
+.closeButton__icon {
+    transition: fill $transitionSetting;
+}
+
 .closeButton:hover .closeButton__icon {
-    fill: $activIconFillColour;
+    fill: $activIconFillColor;
 }

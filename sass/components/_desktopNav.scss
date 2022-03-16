@@ -37,11 +37,13 @@
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: $primaryTitleTextColour;
+    color: $primaryTitleTextColor;
+
+    transition: color $transitionSetting;
 
     &--active {
         position: relative;
-        color: $accentTextColour;
+        color: $accentTextColor;
         
         &::after {
             content: '';
@@ -51,14 +53,14 @@
             width: 100%;
             height: 4px;
             border-radius: 2px;
-            background-color: $accentTextColour;
+            background-color: $accentTextColor;
     
         }
 
     }
 
     &:hover {
-        color: $accentTextColour;
+        color: $accentTextColor;
     }
 }
 
@@ -96,10 +98,11 @@
     font-weight: 500;
     line-height: 1.16;
     letter-spacing: 0.02em;
-    color: $primaryTextColour;
+    color: $primaryTextColor;
+    transition: color $transitionSetting;
 
     &:hover {
-        color: $accentTextColour;
+        color: $accentTextColor;
     }
 
     @media screen and (min-width: 1200px) {
@@ -110,7 +113,8 @@
 
 .desktopNav__contactIcon {
     margin-right: 8px;
-    fill: $primaryTextColour;
+    fill: $primaryTextColor;
+    transition: fill $transitionSetting;
 
     &--email {
         width: 14px;
@@ -128,6 +132,6 @@
     }
 
     .desktopNav__contactLink:hover & {
-        fill: $accentTextColour;
+        fill: $accentTextColor;
     }
 }

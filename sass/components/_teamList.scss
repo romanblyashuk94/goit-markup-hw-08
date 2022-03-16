@@ -10,7 +10,7 @@
 
 
 .teamMember {
-    background-color: $primaryBackgroundColour;
+    background-color: $primaryBackgroundColor;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     text-align: center;
@@ -44,14 +44,14 @@
     }
 }
 .teamMember__name {
-    color: $primaryTitleTextColour;
+    color: $primaryTitleTextColor;
     font-weight: 500;
     margin-bottom: 10px;
     line-height: 1.18;
 }
 .teamMember__position {
     line-height: 1.18;
-    color: $primaryTextColour; 
+    color: $primaryTextColor; 
     margin-bottom: 16px;  
 }
 
@@ -71,16 +71,18 @@
 .teamMember__socialLink {
     @extend %flex-center;
     border-radius: 50%;
+    transition: background-color $transitionSetting;
     
     &:hover {
-        background-color: $activIconFillColour;
+        background-color: $activIconFillColor;
     }
 }
 
 .teamMember__socialIcon {
-    fill: $primaryIconFillColour;
+    fill: $primaryIconFillColor;
+    transition: fill $transitionSetting;
      
     .teamMember__socialLink:hover & {
-        fill: $secondaryIconFillColour;
+        fill: $secondaryIconFillColor;
     }
 }

@@ -4,7 +4,7 @@
     font-size: 24px;
     line-height: 1.19;
     font-weight: 700;
-    color: $primaryTitleTextColour;
+    color: $primaryTitleTextColor;
 
     @media screen and (min-width: 1200px) {
         font-size: 26px;
@@ -13,5 +13,5 @@
 }
 
 .logo__accent {
-    color: $accentTextColour;
+    color: $accentTextColor;
 }

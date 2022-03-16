@@ -26,10 +26,11 @@
     fill: #AFB1B8;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
+    transition: fill $transitionSetting, border $transitionSetting;
 
     &:hover {
-        fill: $activIconFillColour;
-        border: 1px solid $activIconFillColour; 
+        fill: $activIconFillColor;
+        border: 1px solid $activIconFillColor; 
     }
 
     @media screen and (min-width: 1200px) {

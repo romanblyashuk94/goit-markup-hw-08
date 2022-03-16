@@ -26,22 +26,23 @@
 .projectsFilterForm__button {
     @extend %flex-center;
     border-radius: 4px;
-    background-color: $secondaryBackgroundColour;
+    background-color: $secondaryBackgroundColor;
     padding: 6px 22px;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.62;
-    color: $primaryTitleTextColour;
+    color: $primaryTitleTextColor;
     cursor: pointer;
+    transition: background-color $transitionSetting, color $transitionSetting, box-shadow $transitionSetting;
 
     &:hover {
-        background-color: $secondaryLabelBackgroundColour;
-        color: $secondaryTextColour;
+        background-color: $secondaryLabelBackgroundColor;
+        color: $secondaryTextColor;
     }
     
     .projectsFilterForm__radioBtn:checked + & {
-        background-color: $secondaryLabelBackgroundColour;
-        color: $secondaryTextColour;
+        background-color: $secondaryLabelBackgroundColor;
+        color: $secondaryTextColor;
         box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     }
 

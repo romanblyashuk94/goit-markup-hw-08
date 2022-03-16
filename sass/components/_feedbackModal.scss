@@ -29,7 +29,7 @@
     min-width: calc(100% - 30px);
     
 
-    background-color: $primaryBackgroundColour;
+    background-color: $primaryBackgroundColor;
 
     transition: transform $transitionSetting;
 
@@ -46,7 +46,7 @@
 
 .feedbackModal__title {
     text-align: center;
-    color: $primaryTitleTextColour;
+    color: $primaryTitleTextColor;
     font-size: 20px;
     line-height: 1.5;
     font-weight: 700;
@@ -77,6 +77,7 @@
     padding: 11px 12px 11px 42px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    transition: border $transitionSetting;
 
     &--forComents {
         resize: none;
@@ -86,7 +87,7 @@
 
     &:focus{
         outline: none;
-        border: 1px solid $primaryButtonBackgroundColour;
+        border: 1px solid $primaryButtonBackgroundColor;
     }
 }
 
@@ -94,9 +95,10 @@
     position: absolute;
     bottom: 14px;
     left: 15px;
+    transition: fill $transitionSetting;
 
     .feedbackModal__formField:focus-within & {
-        fill: $activIconFillColour;
+        fill: $activIconFillColor;
     }
 }
 
@@ -128,8 +130,8 @@
         background-color: transparent;
 
         .feedbackModal__agreementFieldCheckbox:checked + & {
-            border: 2px solid $activIconFillColour;
-            background-color: $activIconFillColour;
+            border: 2px solid $activIconFillColor;
+            background-color: $activIconFillColor;
             background-image: url(../images/icons/iconCheck.svg);
             background-size: contain;
             background-origin: border-box;
@@ -139,7 +141,7 @@
 
 .feedbackModal__agreementConditionsLink {
     text-decoration: underline;
-    color: $accentTextColour;
+    color: $accentTextColor;
 }
 
 .button.feedbackModal__button {

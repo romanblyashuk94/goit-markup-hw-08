@@ -32,10 +32,10 @@ main {
 
 .pageSection {
     padding: 60px 0;
-    background-color: $primaryBackgroundColour;
+    background-color: $primaryBackgroundColor;
 
     &--grayBG {
-        background-color: $secondaryBackgroundColour;
+        background-color: $secondaryBackgroundColor;
     }
 
     @media screen and (min-width: 1200px) {
@@ -55,7 +55,7 @@ main {
     font-size: 28px;
     line-height: 1.17;
     font-weight: 700;
-    color: $primaryTitleTextColour;
+    color: $primaryTitleTextColor;
 
     @media screen and (min-width: 1200px){
         margin-bottom: 50px;

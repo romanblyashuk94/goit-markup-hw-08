@@ -4,19 +4,20 @@
     padding: 10px 0;
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    background-color: $primaryButtonBackgroundColour;
-    color: $secondaryTitleTextColour;
+    background-color: $primaryButtonBackgroundColor;
+    color: $secondaryTitleTextColor;
     font-size: 16px;
     font-weight: 700;
     line-height: 1.87;
     letter-spacing: 0.06em;
-
+    transition: background-color $transitionSetting;
+    
     &:hover {
-        background-color: $hoverButtonBackgroundColour;
+        background-color: $hoverButtonBackgroundColor;
     }
 }
 
 .button_icon {
     margin-left: 10px;
-    fill: $secondaryIconFillColour;
+    fill: $secondaryIconFillColor;
 }

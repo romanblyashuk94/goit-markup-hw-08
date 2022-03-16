@@ -527,6 +527,8 @@ main {
 
 .footer__contactLink {
   color: rgba(255, 255, 255, 0.6);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer__contactLink:hover, .footer__contactLink:focus {
@@ -578,6 +580,8 @@ main {
 .footer__socialLink {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer__socialLink:hover {
@@ -637,6 +641,8 @@ main {
   font-weight: 700;
   line-height: 1.87;
   letter-spacing: 0.06em;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button:hover {
@@ -700,6 +706,8 @@ main {
 .mobileNav__navLink {
   display: block;
   color: #212121;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobileNav__navLink--active {
@@ -815,6 +823,8 @@ main {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #212121;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .desktopNav__navLink--active {
@@ -872,6 +882,8 @@ main {
   line-height: 1.16;
   letter-spacing: 0.02em;
   color: #757575;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .desktopNav__contactLink:hover {
@@ -888,6 +900,8 @@ main {
 .desktopNav__contactIcon {
   margin-right: 8px;
   fill: #757575;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .desktopNav__contactIcon--email {
@@ -923,6 +937,11 @@ main {
   .menuButton {
     display: none;
   }
+}
+
+.menuIcon {
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menuIcon:hover {
@@ -1187,6 +1206,8 @@ main {
 
 .teamMember__socialLink {
   border-radius: 50%;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .teamMember__socialLink:hover {
@@ -1195,6 +1216,8 @@ main {
 
 .teamMember__socialIcon {
   fill: #AFB1B8;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .teamMember__socialLink:hover .teamMember__socialIcon {
@@ -1236,6 +1259,8 @@ main {
   fill: #AFB1B8;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clientsList__icon:hover {
@@ -1331,6 +1356,8 @@ main {
   padding: 11px 12px 11px 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .feedbackModal__textField--forComents {
@@ -1348,6 +1375,8 @@ main {
   position: absolute;
   bottom: 14px;
   left: 15px;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .feedbackModal__formField:focus-within .feedbackModal__inputIcon {
@@ -1410,6 +1439,11 @@ main {
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+}
+
+.closeButton__icon {
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .closeButton:hover .closeButton__icon {
