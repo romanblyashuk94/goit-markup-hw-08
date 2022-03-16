@@ -426,6 +426,7 @@ main {
 @media screen and (min-width: 1200px) {
   .pageSection__title {
     margin-bottom: 50px;
+    font-size: 36px;
   }
 }
 
