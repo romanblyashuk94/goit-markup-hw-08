@@ -8,18 +8,41 @@
     background-size: cover;
     text-align: center;
 
-    @media screen and (min-width: 768px) {
-        
-        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), 
+    @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), 
                                                rgba(47, 48, 58, 0.4)), 
-                          url(../images/heroBackground-768w.jpg);
+                          url(../images/heroBackground-480w@x2.jpg);   
+    }
+
+    @media screen and (min-width: 568px) {
+        
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heroBackground-768w.jpg);
+        
+        @media screen and (min-device-pixel-ratio: 2),
+                          screen and (min-resolution: 192dpi),
+                          screen and (min-resolution: 2dppx) {
+                  
+                              background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), 
+                                                                 rgba(47, 48, 58, 0.4)), 
+                                            url(../images/heroBackground-768w@x2.jpg);   
+                      }
     }
 
     @media screen and (min-width: 1200px) {
         padding: 200px 0;
-        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), 
-                                               rgba(47, 48, 58, 0.4)), 
-                          url(../images/heroBackground-1200w.jpg);
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),  url(../images/heroBackground-1200w.jpg);
+        
+        @media screen and (min-device-pixel-ratio: 2),
+                          screen and (min-resolution: 192dpi),
+                          screen and (min-resolution: 2dppx) {
+                  
+                              background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), 
+                                                                 rgba(47, 48, 58, 0.4)), 
+                                            url(../images/heroBackground-1200w@x2.jpg);   
+                      }
     }
 
 }
