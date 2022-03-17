@@ -1,15 +1,27 @@
 .hero {
     padding: 118px 0;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), 
-                                               rgba(47, 48, 58, 0.4)), 
-                      url(../images/heroBackground.jpg);
+                                                rgba(47, 48, 58, 0.4)), 
+                      url(../images/heroBackground-480w.jpg);
+    
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
 
+    @media screen and (min-width: 768px) {
+        
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), 
+                                               rgba(47, 48, 58, 0.4)), 
+                          url(../images/heroBackground-768w.jpg);
+    }
+
     @media screen and (min-width: 1200px) {
         padding: 200px 0;
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), 
+                                               rgba(47, 48, 58, 0.4)), 
+                          url(../images/heroBackground-1200w.jpg);
     }
+
 }
 
 
